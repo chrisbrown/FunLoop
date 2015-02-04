@@ -8,6 +8,7 @@ public class CreateLetter : MonoBehaviour {
         transform.localScale = new Vector3(-100, 100, 100);
         gameObject.AddComponent<Rigidbody>();
         gameObject.AddComponent<BoxCollider>();
+        //gameObject.collider.enabled = false;
         gameObject.rigidbody.useGravity = false;
     }
 

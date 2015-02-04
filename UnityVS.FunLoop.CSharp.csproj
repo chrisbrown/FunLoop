@@ -57,7 +57,7 @@
     <Compile Include="Assets\Scripts\CreateLetter.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\Scripts\PhraseGenerator.cs" />
-    <Compile Include="Assets\Scripts\SetCubeColor.cs" />
+    <Compile Include="Assets\Scripts\TextManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\nouns.txt" />

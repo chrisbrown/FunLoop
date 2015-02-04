@@ -6,9 +6,10 @@ public class PhraseGenerator : MonoBehaviour {
 
     private ArrayList nouns;
     private ArrayList verbs;
-    bool phraseActive;
-    string phrase;
+    public bool phraseActive;
+    public string phrase;
     GameObject[] phraseModel;
+    
     void Awake()
     {
         nouns = getText("nouns.txt");
@@ -16,18 +17,15 @@ public class PhraseGenerator : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
-	
+        showPhrase();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (!phraseActive)
-        {
-            generateNewPhrase();
-            renderPhrase();
-            phraseActive = true;
-        }
+            
+            
 	}
+
 
     void generateNewPhrase() {
         int rand = Random.Range(0, 1);
@@ -66,6 +64,13 @@ public class PhraseGenerator : MonoBehaviour {
             }
         }
     }
+
+    public void showPhrase()
+    {
+        generateNewPhrase();
+        renderPhrase();
+    }
+
     ArrayList getText(string fileName)
     {
         ArrayList res = new ArrayList();
